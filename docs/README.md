@@ -1,38 +1,106 @@
-# Documentación del Proyecto
+Sistema IoT para Monitoreo y Localización de Ganado Bovino
 
-## Nombre
+Descripción
 
-Sistema IoT para monitoreo y localización de ganado mediante ESP32, LoRa, GPS y GSM.
+Este proyecto tiene como objetivo desarrollar un sistema IoT capaz de apoyar a los ganaderos en la localización y monitoreo de ganado bovino en zonas rurales mediante tecnologías GPS, LoRa y GSM.
 
-## Problema
+La solución busca reducir el tiempo de búsqueda de animales en libre pastoreo y proporcionar alertas ante posibles situaciones anormales, como periodos prolongados de inmovilidad.
 
-Los ganaderos de zonas rurales invierten una gran cantidad de tiempo en la búsqueda de animales en libre pastoreo.
+⸻
 
-Además, existen riesgos asociados como:
+Problema
 
-- Robo de ganado.
-- Pérdida de animales.
-- Enfermedades detectadas tardíamente.
-- Falta de información sobre ubicación en tiempo real.
-- Escasa cobertura celular en zonas rurales.
+En muchas comunidades rurales los animales son llevados a zonas extensas de pastoreo donde la supervisión constante resulta complicada. Esto puede ocasionar pérdidas de tiempo durante la búsqueda de animales, dificultades para detectar incidentes y una menor capacidad de reacción ante situaciones inesperadas.
 
-## Objetivo General
+⸻
 
-Desarrollar un sistema IoT capaz de localizar ganado bovino en zonas rurales con baja cobertura celular mediante tecnologías GPS, LoRa y GSM.
+Objetivo General
 
-## Estado del Proyecto
+Diseñar e implementar un sistema IoT para monitoreo y localización de ganado bovino utilizando GPS, LoRa y GSM.
 
-Fase de análisis y definición de requisitos.
+⸻
 
-## Arquitectura General
+Arquitectura General
 
-Nodo Animal → Gateway LoRa/GSM → Usuario
+Nodo Animal
 
-## Tecnologías Consideradas
+GPS + MPU6050 + LilyGO LoRa32
 
-- ESP32
-- LoRa SX1278
-- GPS NEO-6M
-- GSM SIM808
-- Android
-- Google Maps
+↓
+
+LoRa
+
+↓
+
+Gateway
+
+LilyGO LoRa32 + SIM808
+
+↓
+
+GSM
+
+↓
+
+Usuario
+
+⸻
+
+Tecnologías Utilizadas
+
+Hardware
+
+* LilyGO LoRa32
+* GPS NEO-6M
+* MPU6050
+* SIM808
+* Baterías LiPo
+* Panel Solar
+
+Software
+
+* Arduino IDE
+* GitHub
+* Draw.io
+
+Comunicaciones
+
+* GPS
+* LoRa
+* GSM
+
+⸻
+
+Estado Actual
+
+Completado
+
+* Definición del problema.
+* Arquitectura del sistema.
+* Selección de componentes.
+* Documentación inicial.
+* Adquisición de dos LilyGO LoRa32.
+
+En Desarrollo
+
+* Comunicación LoRa entre nodos.
+* Integración de sensores.
+* Desarrollo del firmware.
+
+⸻
+
+Próximos Pasos
+
+1. Validar comunicación LoRa.
+2. Integrar GPS.
+3. Integrar MPU6050.
+4. Implementar alertas.
+5. Realizar pruebas de campo.
+
+⸻
+
+Autor
+
+Braulio Emilio Hernández Olvera
+
+Ingeniería en Telemática
