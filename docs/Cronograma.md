@@ -1,126 +1,198 @@
-# Cronograma del Proyecto
+Cronograma del Proyecto
 
-## Fase 1 - Definición del Problema
+Estado General
+
+Proyecto: Sistema IoT para Monitoreo y Localización de Ganado Bovino
+
+Estado actual estimado: 35% - 40%
+
+Última actualización: Junio 2026
+
+⸻
+
+Fase 1 - Análisis y Definición del Problema
+
+Estado: Completada
+
+Objetivos:
+
+* Identificar una problemática real.
+* Analizar alternativas existentes.
+* Definir alcance y limitaciones.
+* Validar la necesidad con usuarios potenciales.
+
+Entregables:
+
+* Alcances.md
+* Limitaciones.md
+* Requerimientos.md
+* Definición del problema
+
+Resultado:
+
+Se definió el monitoreo y localización de ganado bovino como enfoque principal del proyecto.
+
+⸻
+
+Fase 2 - Diseño de la Solución
+
+Estado: Completada
+
+Objetivos:
+
+* Diseñar la arquitectura general.
+* Seleccionar tecnologías.
+* Definir flujo de información.
+* Seleccionar componentes de hardware.
+
+Entregables:
+
+* Arquitectura.md
+* Componentes.md
+* Diagramas del sistema
+
+Resultado:
+
+Arquitectura basada en GPS + LoRa + GSM.
+
+⸻
+
+Fase 3 - Validación de Comunicación LoRa
+
 Estado: En progreso
 
 Objetivos:
 
-- Identificar necesidades reales de los ganaderos.
-- Definir alcance y limitaciones.
-- Documentar requerimientos.
-- Validar problemática con usuarios potenciales.
+* Configurar los dos LilyGO LoRa32.
+* Establecer comunicación LoRa entre dispositivos.
+* Validar transmisión y recepción de mensajes.
 
 Entregables:
 
-- Alcances.md
-- Limitaciones.md
-- Problematica.md
+* Comunicación LoRa funcional.
+* Registro de pruebas.
+* Evidencia experimental.
 
----
+Resultado esperado:
 
-## Fase 2 - Diseño de Arquitectura
+Transmisión exitosa entre nodo animal y gateway.
+
+⸻
+
+Fase 4 - Desarrollo del Nodo Animal
+
 Estado: Pendiente
 
 Objetivos:
 
-- Diseñar arquitectura general.
-- Definir flujo de datos.
-- Seleccionar componentes.
+* Integrar GPS NEO-6M.
+* Integrar MPU6050.
+* Obtener coordenadas GPS.
+* Detectar movimiento e inmovilidad.
+* Implementar ahorro energético.
 
 Entregables:
 
-- Arquitectura.md
-- Componentes.md
-- Diagramas del sistema
+* Nodo animal funcional.
 
----
+⸻
 
-## Fase 3 - Pruebas de Comunicación
+Fase 5 - Desarrollo del Gateway
+
 Estado: Pendiente
 
 Objetivos:
 
-- Comunicación ESP32 ↔️ GPS.
-- Comunicación ESP32 ↔️ LoRa.
-- Comunicación Gateway ↔️ SIM808.
+* Integrar SIM808.
+* Procesar información recibida.
+* Implementar generación de alertas.
+* Enviar notificaciones mediante GSM.
 
 Entregables:
 
-- Lectura GPS funcional.
-- Comunicación LoRa funcional.
-- Envío de SMS funcional.
+* Gateway funcional.
 
----
+⸻
 
-## Fase 4 - Desarrollo del Nodo Animal
+Fase 6 - Integración del Sistema
+
 Estado: Pendiente
 
 Objetivos:
 
-- Obtener coordenadas GPS.
-- Detectar movimiento.
-- Transmitir información por LoRa.
+* Integrar nodo animal y gateway.
+* Definir formato de mensajes.
+* Validar flujo completo de información.
 
 Entregables:
 
-- Nodo animal operativo.
+* Sistema completamente integrado.
 
----
+⸻
 
-## Fase 5 - Desarrollo del Gateway
+Fase 7 - Pruebas de Campo
+
 Estado: Pendiente
 
 Objetivos:
 
-- Recibir información LoRa.
-- Procesar eventos.
-- Generar alertas GSM.
+* Realizar pruebas reales.
+* Evaluar cobertura LoRa.
+* Medir precisión GPS.
+* Evaluar autonomía energética.
+* Verificar alertas por inmovilidad.
 
 Entregables:
 
-- Gateway operativo.
+* Resultados experimentales.
+* Registro de pruebas.
 
----
+⸻
 
-## Fase 6 - Integración del Sistema
+Fase 8 - Optimización
+
 Estado: Pendiente
 
 Objetivos:
 
-- Integrar nodo y gateway.
-- Realizar pruebas de alcance.
-- Ajustar parámetros.
+* Ajustar consumo energético.
+* Mejorar estabilidad de comunicación.
+* Optimizar tiempos de respuesta.
 
 Entregables:
 
-- Sistema funcional.
+* Versión optimizada del sistema.
 
----
+⸻
 
-## Fase 7 - Validación en Campo
+Fase 9 - Redacción de la Tesis
+
+Estado: En progreso
+
+Objetivos:
+
+* Documentar avances.
+* Elaborar capítulos.
+* Integrar resultados experimentales.
+* Generar conclusiones.
+
+Entregables:
+
+* Documento final de tesis.
+
+⸻
+
+Fase 10 - Preparación de Defensa
+
 Estado: Pendiente
 
 Objetivos:
 
-- Realizar pruebas con ganado.
-- Medir cobertura.
-- Evaluar alertas de inactividad.
+* Preparar presentación.
+* Organizar evidencia experimental.
+* Practicar exposición.
 
 Entregables:
 
-- Resultados experimentales.
-
----
-
-## Fase 8 - Redacción de Tesis
-Estado: Pendiente
-
-Objetivos:
-
-- Elaborar documento final.
-- Generar conclusiones.
-- Preparar defensa.
-
-Entregables:
-
-- Tesis terminada.
+* Presentación final.
+* Defensa de tesis.
